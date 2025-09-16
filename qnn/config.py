@@ -1,0 +1,3 @@
+SEED = 42
+DTYPE = 'float64'
+DEFAULT_SHOTS = 4096
