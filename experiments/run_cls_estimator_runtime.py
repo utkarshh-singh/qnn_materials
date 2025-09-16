@@ -13,8 +13,9 @@ num_inputs, num_samples = 2, 60
 X = 2 * algorithm_globals.random.random([num_samples, num_inputs]) - 1
 y01 = (np.sum(X, axis=1) >= 0).astype(int)
 y = 2*y01 - 1
-backend = "ibm_oslo"  # set your backend
-estimator_rt, session = make_runtime_estimator(backend_name=backend, shots=4096, optimization_level=1, resilience_level=1)
+service = QiskitRuntimeService()
+backend = service.backend("ibm_torino")  # set your backend
+estimator_rt, session = make_runtime_estimator(service=service,backend_name=ackend.name, shots=4096, optimization_level=1, resilience_level=1)
 try:
     qc = make_qnn_circuit(num_qubits=num_inputs)
     est = make_estimator("runtime", runtime_estimator=estimator_rt)
