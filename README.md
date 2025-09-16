@@ -203,4 +203,4 @@ for epoch in range(20):
 
 ## 🙌 Acknowledgments
 
-This package design was inspired by research and development in **quantum kernels** and **quantum reservoir computing**, extended here for practical QNN workflows.
+This package design was inspired form my work in QNNs, extended here for practical QNN workflows in material science.
