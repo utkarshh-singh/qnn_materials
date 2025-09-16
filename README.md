@@ -1,15 +1,3 @@
-# Quantum Neural Network (QNN) Package
-
-# QNN Codebase (Noise + Hardware)
-- Noisy Aer: `qnn/primitives/noise.py` + Aer primitives options
-- Hardware Runtime: `qnn/primitives/runtime.py` helpers
-
-## Quickstart
-- pip install -e .
-- python experiments/run_cls_estimator_aer_noise.py
-# Hardware (after saving IBM Quantum token):
-- python experiments/run_cls_estimator_runtime.py
-=======
 This package provides a **modular and user-friendly interface** to design and train **Quantum Neural Networks (QNNs)** on simulators, noisy backends, and hardware.  
 
 It wraps the power of **Qiskit Machine Learning**, **Aer**, and **IBM Runtime** into a flexible but beginner-friendly API.
